@@ -1,8 +1,10 @@
 import path from "node:path"
 import pc from "picocolors"
 
+
+type TPossibleModuleName = "service-worker" | "content" | "popup" | "options" | "side-panel"
 type TExtensionModuleInputConfigItem = {
-	module: string
+	module: TPossibleModuleName
 	path: string
 	enabled: boolean
 }
@@ -35,7 +37,6 @@ const extensionModuleInputConfig: TExtensionModuleInputConfigItem[] = [
 	}
 ]
 
-const DEFAULT_BASE_DIR = "src"
 export const ExtensionModulesConfig = {
 	input() {
 		console.log(pc.yellow("These modules are currently not enabled; set `enable: true` if you need them\n"))
