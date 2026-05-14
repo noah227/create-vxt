@@ -1,0 +1,8 @@
+{
+	"appName": {
+		"message": "我的扩展"
+	},
+	"appDesc": {
+		"message": "vite构建的基于vue的扩展。"
+	}
+}

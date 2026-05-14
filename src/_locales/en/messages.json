@@ -1,0 +1,8 @@
+{
+	"appName": {
+		"message": "My Extension"
+	},
+	"appDesc": {
+		"message": "An extension based on vue, built with vite."
+	}
+}

@@ -34,6 +34,11 @@ export default defineConfig({
 		viteStaticCopy({
 			targets: [
 				{
+					src: normalizePath(path.resolve(__dirname, "src/_locales")),
+					dest: "_locales",
+					rename: {stripBase: 2}
+				},
+				{
 					src: normalizePath(path.resolve(__dirname, "src/manifest.json")),
 					dest: ".",
 					rename: {stripBase: true}

@@ -1,8 +1,8 @@
 {
 	"$schema": "https://json.schemastore.org/chrome-manifest",
 	"manifest_version": 3,
-	"name": "Test Vite Based Extension",
-	"description": "Test Extension",
+	"name": "__MSG_appName__",
+	"description": "__MSG_appDesc__",
 	"version": "0.0.1",
 	"action": {
 		"default_popup": "src/popup/index.html"
@@ -30,6 +30,7 @@
 		"service_worker": "js/service-worker.js",
 		"type": "module"
 	},
+	"default_locale": "en",
 	"icons": {
 		"16": "images/icon-16.png",
 		"32": "images/icon-32.png",
