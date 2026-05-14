@@ -87,7 +87,7 @@ const initReadme = ({appFullPath, appName}: TUserInput) => {
 		path.resolve(cliRoot, "README.template.md"),
 		{encoding: "utf8"}
 	)
-	const readmeContent = readMeTemplate.replace("# vxt-template-next", `# ${appName}`)
+	const readmeContent = readMeTemplate.replace("# create-vxt", `# ${appName}`)
 	fs.writeFileSync(
 		path.resolve(appFullPath, "README.md"),
 		readmeContent,

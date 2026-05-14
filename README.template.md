@@ -1,4 +1,4 @@
-# vxt-template-next
+# create-vxt
 
 ## Development
 
