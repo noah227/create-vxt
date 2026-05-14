@@ -5,8 +5,8 @@
 ### Manifest
 
 * Most modules need to be properly configured in manifest.json
-	* For example, side-panel is not configured as the default in the Vite build entry or in the manifest file, if you
-	  need side-panel in your app, then you need to config it both in Vite build entry and manifest file
+    * For example, side-panel is not configured as the default in the Vite build entry or in the manifest file, if you
+      need side-panel in your app, then you need to config it both in Vite build entry and manifest file
 
 * About manifest, see [ChromeDocs/Manifest](https://developer.chrome.google.cn/docs/extensions/reference/manifest)
 
