@@ -14,8 +14,9 @@ export const emptyDir = (dirFullPath: string) => {
 export const ableToUseDir = (userInput: TUserInput) => {
     const {appFullPath} = userInput
     if (!fs.existsSync(appFullPath)) return true
-    // is dir?
-    // ...
+    // exists
+    // but not dir
+    if (fs.statSync(appFullPath).isFile()) return false
     // is empty dir
     return fs.readdirSync(appFullPath).length === 0
 }
@@ -87,7 +88,7 @@ const initReadme = ({appFullPath, appName}: TUserInput) => {
         path.resolve(cliRoot, "README.template.md"),
         {encoding: "utf8"}
     )
-    const readmeContent = readMeTemplate.replace("# create-vxt", `# ${appName}`)
+    const readmeContent = readMeTemplate.replace(`# ${pkg.name}`, `# ${appName}`)
     fs.writeFileSync(
         path.resolve(appFullPath, "README.md"),
         readmeContent,

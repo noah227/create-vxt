@@ -4,9 +4,10 @@ import path from "node:path"
 import {ableToUseDir, copyFiles, emptyDir} from "./utils";
 import fs from "node:fs"
 import {vUtils} from "./utils.external";
+import pc from "picocolors"
 
 async function main() {
-    intro("create-vxt --- To create an extension app based on vite.")
+    intro("create-vxt --- To create an extension based on vite.")
 
     const userInput: TUserInput = {
         appName: "",
@@ -18,7 +19,7 @@ async function main() {
     // Args prepare: User input.
     const appName = await text({
         message: "Name of your extension:",
-        placeholder: "MyExtension"
+        placeholder: "my-extension"
     })
 
     if (isCancel(appName)) {
@@ -43,11 +44,12 @@ async function main() {
         userInput.appName = result
     }
 
+    // Extension root
     userInput.appFullPath = path.join(userInput.cwd, userInput.appName)
 
     if (!ableToUseDir(userInput)) {
         const result = await confirm({
-            message: `<${userInput.appName}> is not empty, overwrite and continue?`,
+            message: `<${userInput.appName}> already exists, ${pc.yellow("overwrite and continue")}?`,
             initialValue: false
         })
 
