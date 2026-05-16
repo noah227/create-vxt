@@ -5,7 +5,6 @@ export const templateFiles = [
     "src",
     // config & env files
     ".editorconfig",
-    ".gitignore",
     "env.d.ts",
     "tsconfig.app.json",
     "tsconfig.json",

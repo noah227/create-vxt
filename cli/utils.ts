@@ -39,6 +39,7 @@ export const copyFiles = (userInput: TUserInput) => {
     })
     initPackageJson(userInput)
     initReadme(userInput)
+    initGitignore(userInput)
 }
 
 const cliOnlyScripts = ["build-cli", "include-files"]
@@ -93,5 +94,12 @@ const initReadme = ({appFullPath, appName}: TUserInput) => {
         path.resolve(appFullPath, "README.md"),
         readmeContent,
         {encoding: "utf8"}
+    )
+}
+
+const initGitignore = ({appFullPath}: TUserInput) => {
+    fs.cpSync(
+        path.resolve(cliRoot, "_gitignore"),
+        path.resolve(appFullPath, ".gitignore")
     )
 }

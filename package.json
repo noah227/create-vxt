@@ -30,7 +30,6 @@
         "public",
         "src",
         ".editorconfig",
-        ".gitignore",
         "env.d.ts",
         "tsconfig.app.json",
         "tsconfig.json",
@@ -38,6 +37,7 @@
         "vite.config.ts",
         "vxt.config.ts",
         "cli-dist",
+        "_gitignore",
         "package.json",
         "README.md",
         "README.template.md"
