@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import {cancel, confirm, intro, isCancel, outro, text} from "@clack/prompts"
 import {TUserInput} from "./types";
 import path from "node:path"
