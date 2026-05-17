@@ -34,7 +34,6 @@
         "tsconfig.json",
         "tsconfig.node.json",
         "vite.config.ts",
-        "vxt.config.ts",
         "cli-dist",
         "_gitignore",
         "package.json",

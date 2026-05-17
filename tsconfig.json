@@ -14,7 +14,6 @@
         ]
     },
     "include": [
-        "vxt.config.ts",
         "vite.cli.config.ts",
         "cli/*.ts"
     ]

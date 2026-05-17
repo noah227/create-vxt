@@ -5,8 +5,6 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 import path from "node:path"
 import {viteStaticCopy} from 'vite-plugin-static-copy'
 
-import {ExtensionModulesConfig} from "./vxt.config";
-
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -14,12 +12,11 @@ export default defineConfig({
         // https://rolldown.rs/reference/
         rolldownOptions: {
             input: {
-                ...ExtensionModulesConfig.input(),
-                // "service-worker": path.resolve(__dirname, "src/background/service-worker.ts"),
-                // content: path.resolve(__dirname, "src/content-scripts/index.ts"),
-                // popup: path.resolve(__dirname, "src/popup/index.html"),
-                // options: path.resolve(__dirname, "src/options/index.html"),
-                // "side-panel": path.resolve(__dirname, "src/side-panel/index.html"),
+                "service-worker": path.resolve(__dirname, "src/background/service-worker.ts"),
+                content: path.resolve(__dirname, "src/content-scripts/index.ts"),
+                popup: path.resolve(__dirname, "src/popup/index.html"),
+                options: path.resolve(__dirname, "src/options/index.html"),
+                "side-panel": path.resolve(__dirname, "src/side-panel/index.html"),
             },
             output: {
                 entryFileNames: "js/[name].js",

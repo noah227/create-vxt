@@ -9,6 +9,5 @@ export const templateFiles = [
     "tsconfig.app.json",
     "tsconfig.json",
     "tsconfig.node.json",
-    "vite.config.ts",
-    "vxt.config.ts"
+    "vite.config.ts"
 ]
