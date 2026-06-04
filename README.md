@@ -1,6 +1,6 @@
 # create-vxt
 
-To create a vue based browser extension
+To create and build vue based browser extension
 
 ---
 

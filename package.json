@@ -1,7 +1,7 @@
 {
     "name": "create-vxt",
     "version": "0.1.0",
-    "description": "create vue based browser extension",
+    "description": "create and build vue based browser extension",
     "keywords": [
         "chrome",
         "edge",
@@ -45,7 +45,7 @@
         "type": "git",
         "url": "git+https://github.com/noah227/create-vxt.git"
     },
-    "homepage": "",
+    "homepage": "https://vxt.js.org",
     "license": "MIT",
     "dependencies": {
         "vue": "^3.5.32"
