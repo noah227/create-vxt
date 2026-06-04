@@ -1,28 +1,29 @@
 # create-vxt
 
-## Development
+## Setup
 
-### Manifest
+```shell
+npm install
+```
 
-* Most modules need to be properly configured in manifest.json
-    * For example, side-panel is not configured as the default in the Vite build entry or in the manifest file, if you
-      need side-panel in your app, then you need to config it both in Vite build entry and manifest file
+### Build with type-check
 
-* About manifest, see [ChromeDocs/Manifest](https://developer.chrome.google.cn/docs/extensions/reference/manifest)
+```shell
+npm run build
+```
 
-### File build config
+### Build only
 
-There are two things that may get your attention (both in vite.config.ts):
+```shell
+npm run build-only
+```
 
-* build.rolldownOptions.[input|output]
-* viteStaticCopy#targets [How to config?](https://www.npmjs.com/package/vite-plugin-static-copy?activeTab=readme)
+### Build with file watch
 
-## Examples
+```shell
+npm run build-watch
+```
 
-* [?]() A contextmenu extension
-* [?]() A side-panel extension(list links within this page)
-* [?]() ...
+## Documentation
 
-## Contact
-
-[issue]()
+See [documentation](https://vxt.js.org).
