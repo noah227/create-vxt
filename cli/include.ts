@@ -16,6 +16,7 @@ const includeFiles = () => {
         // cli files
         "cli-dist",
         "_gitignore",
+        "extension-icon-128.png",
         "package.json",
         "README.md",
         "README.template.md"
