@@ -2,6 +2,12 @@
 
 To create a vue based browser extension
 
+---
+
+<img src="extension-icon.svg" style="width: 128px;" alt="icon">
+
+---
+
 ## Usage
 
 ```shell
