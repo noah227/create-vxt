@@ -76,8 +76,8 @@ async function main() {
 
     copyFiles(userInput)
 
-    console.log(userInput)
-    outro("App created, have fun!")
+    // console.log(userInput)
+    outro("App created!")
 }
 
 void main()
