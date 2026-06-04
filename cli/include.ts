@@ -12,6 +12,7 @@ const includeFiles = () => {
 
     pkg.files = [
         ...templateFiles,
+        "tsconfig.json",
         // cli files
         "cli-dist",
         "_gitignore",
