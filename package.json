@@ -1,6 +1,6 @@
 {
     "name": "create-vxt",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "create and build vue based browser extension",
     "keywords": [
         "chrome",
