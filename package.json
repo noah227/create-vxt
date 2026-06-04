@@ -54,6 +54,7 @@
         "@types/node": "^24.12.4",
         "@vitejs/plugin-vue": "^6.0.6",
         "@vue/tsconfig": "^0.9.1",
+        "chrome-types": "^0.1.429",
         "npm-run-all2": "^8.0.4",
         "picocolors": "^1.1.1",
         "sass-embedded": "^1.99.0",

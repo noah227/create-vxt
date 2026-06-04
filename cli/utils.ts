@@ -40,6 +40,7 @@ export const copyFiles = (userInput: TUserInput) => {
     initPackageJson(userInput)
     initReadme(userInput)
     initGitignore(userInput)
+    initTsConfig(userInput)
 }
 
 const cliOnlyScripts = ["build-cli", "include-files"]
@@ -101,5 +102,20 @@ const initGitignore = ({appFullPath}: TUserInput) => {
     fs.cpSync(
         path.resolve(cliRoot, "_gitignore"),
         path.resolve(appFullPath, ".gitignore")
+    )
+}
+
+const initTsConfig = ({appFullPath, appName}: TUserInput) => {
+    const tsconfigContent = fs.readFileSync(
+        path.resolve(cliRoot, "tsconfig.json"),
+        {encoding: "utf8"}
+    )
+    const tsconfig = JSON.parse(tsconfigContent)
+    delete tsconfig.compilerOptions
+    delete tsconfig.include
+    fs.writeFileSync(
+        path.resolve(appFullPath, "tsconfig.json"),
+        JSON.stringify(tsconfig, null, 4),
+        {encoding: "utf8"}
     )
 }

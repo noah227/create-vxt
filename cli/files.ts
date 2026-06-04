@@ -7,7 +7,6 @@ export const templateFiles = [
     ".editorconfig",
     "env.d.ts",
     "tsconfig.app.json",
-    "tsconfig.json",
     "tsconfig.node.json",
     "vite.config.ts"
 ]
