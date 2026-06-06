@@ -1,6 +1,6 @@
 {
     "name": "create-vxt",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "description": "create and build vue based browser extension",
     "keywords": [
         "chrome",
@@ -18,6 +18,7 @@
         "build-only": "vite build",
         "build-watch": "vite build --watch",
         "type-check": "vue-tsc --build",
+        "update-icons": "node scripts/update.icons.js",
         "build-cli": "rolldown -c vite.cli.config.ts",
         "include-files": "tsx cli/include.ts"
     },
@@ -28,6 +29,7 @@
         ".vscode/extensions.json",
         "public",
         "src",
+        "scripts",
         ".editorconfig",
         "env.d.ts",
         "tsconfig.app.json",
@@ -60,6 +62,7 @@
         "npm-run-all2": "^8.0.4",
         "picocolors": "^1.1.1",
         "sass-embedded": "^1.99.0",
+        "sharp": "^0.34.5",
         "tsx": "^4.22.0",
         "typescript": "~6.0.0",
         "vite": "^8.0.8",

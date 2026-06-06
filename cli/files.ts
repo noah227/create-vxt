@@ -3,6 +3,8 @@ export const templateFiles = [
     ".vscode/extensions.json",
     "public",
     "src",
+    // utils scripts
+    "scripts",
     // config & env files
     ".editorconfig",
     "env.d.ts",
